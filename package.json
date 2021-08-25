@@ -1,0 +1,20 @@
+{
+  "name": "sin-number-generator",
+  "version": "1.0.0",
+  "description": "Tool to generate valid Canadian SIN numbers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enichol/sin-number-generator.git"
+  },
+  "author": "Ethan Nichol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enichol/sin-number-generator/issues"
+  },
+  "homepage": "https://github.com/enichol/sin-number-generator#readme"
+}
