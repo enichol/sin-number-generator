@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const KEY = '121 212 121';
 const SIN = '046 454 286';
-const AMOUNT_GENERATED = 10_000;
+const DEFAULT_AMOUNT_GENERATED = 10_000;
 
 const isValidSIN = (sin, key) => {
     sin = sin.toString().replace(/ /g, '').split('');
@@ -20,7 +20,8 @@ const isValidSIN = (sin, key) => {
 };
 
 let validSins = [];
-while (validSins.length < AMOUNT_GENERATED) {
+const iterations = process.argv[2] ? process.argv[2] : DEFAULT_AMOUNT_GENERATED
+while (validSins.length < iterations) {
     let randomSIN = '';
     for (let i=0; i<9; i++){
         randomSIN += Math.floor(Math.random() * 10).toString();
